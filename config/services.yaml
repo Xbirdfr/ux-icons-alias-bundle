@@ -1,0 +1,8 @@
+services:
+    Xbird\UxIconsAliasBundle\Twig\Extension\UxiconsaliasExtension:
+        tags: [twig.extension]
+    Xbird\UxIconsAliasBundle\Twig\Runtime\UxiconsaliasRuntime:
+        tags: [twig.runtime]
+        arguments:
+            $alias: '%ux_icons_alias.alias%'
+        autowire: true  
