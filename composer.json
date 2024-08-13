@@ -1,6 +1,6 @@
 {
     "name": "xbirdfr/ux-icons-alias-bundle",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "type": "symfony-bundle",
     "description": "A Bundle that provides alias for Symfony UX Icons",
     "license": "MIT",
@@ -9,7 +9,7 @@
         "php": ">=8.2",
         "symfony/ux-icons": "^2.19"
     },
-
+    "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
             "Xbird\\UxIconsAliasBundle\\": "src/"

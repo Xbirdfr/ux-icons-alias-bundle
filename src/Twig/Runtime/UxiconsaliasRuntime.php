@@ -21,5 +21,5 @@ class UxiconsaliasRuntime implements RuntimeExtensionInterface
     {
         if (array_key_exists($name, $this->alias)) $name = $this->alias[$name];
         return $this->renderer->renderIcon($name, $attributes);
-    }    
+    }
 }

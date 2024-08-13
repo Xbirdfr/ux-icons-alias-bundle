@@ -25,8 +25,8 @@ class UxIconsAliasBundle extends AbstractBundle
     {
         $definition->rootNode()
             ->children()
-                ->arrayNode('alias')
-                ->prototype('scalar')->end()
+            ->arrayNode('alias')
+            ->prototype('scalar')->end()
         ;
     }
 }
