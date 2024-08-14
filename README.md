@@ -30,7 +30,7 @@ composer require xbirdfr/ux-icons-alias-bundle
 
 Then, enable the bundle by adding it to the list of registered bundles in your project's `config/bundles.php` file:
 
-```
+```php
 // config/bundles.php
 
 return [
@@ -48,7 +48,7 @@ Create the `ux_icons_alias.yaml` file in the `config/packages` directory:
 ```yaml
 # config/packages/ux_icons_alias.yaml
 ux_icons_alias:
-  alias: []
+  alias:
 ```
 
 ### Step 2: Create an Alias
@@ -62,9 +62,20 @@ ux_icons_alias:
     home: material-symbols:home
 ```
 
+Don't forget to clear the cache, unless your alias will not show up
+
+```
+php bin/console cache:clear
+```
+
+
 ### Step 3: Use Your New Alias
 
 In a Twig template, use the `ux_icon_alias` function to display your aliased icon:
+
+```twig
+{{ ux_icon_alias('alias', { attributes }) }}
+```
 
 ```twig
 {# In a Twig template #}
