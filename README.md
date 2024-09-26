@@ -1,5 +1,10 @@
 # UX Icons Alias Bundle
 
+**⚠️ NOTE:** _This repository is no longer maintained, as Symfony UX now provides a more robust solution for handling icon aliases._  
+For more details, please refer to the alias system in the [Symfony UX documentation](https://symfony.com/bundles/ux-icons/current/index.html).
+
+---
+
 This bundle provides an alias system for [Symfony UX Icons](https://ux.symfony.com/icons).
 
 It adds a Twig function on top of the `IconRendererInterface` introduced in version 2.19 of [symfony/ux-icons](https://github.com/symfony/ux-icons).
